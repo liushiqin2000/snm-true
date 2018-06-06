@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+.sn_container{
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  height: 1000px;
+  background-color: plum;
+  margin: 0 auto;
+  padding-top: 90rem/@base;
+}
+.sn_header{
+  height: 90rem/@base;
+  width: 100%;
+  background-color: @snColor;
+  position: fixed;
+  top:0;
+  max-width: 750px;
+  padding:0 90rem/@base;
+  .hearder_left,.header_right{
+    width: 90rem/@base;
+    height: 90rem/@base;
+    background-color: cornflowerblue;
+    position: absolute;
+    top:0;
+  }
+  input{
+    width: 100%;
+    height:60rem/@base;
+    border-radius: 9rem/@base;
+    box-sizing: border-box;
+    margin-top:15rem/@base;
+    padding-left: 50rem/@base;
+    font-size: 24rem/@base;
+    background-color: rgba(255,255,255,.4);
+  }
+  .hearder_left{
+    left:0;
+    background: url(../images/icon_category.png) no-repeat center center;
+    background-size:44rem/@base 70rem/@base;
+  }
+  .header_right{
+    right:0;
+    background: url(../images/icon_cart.png) no-repeat center center;
+    background-size:63rem/@base 68rem/@base;
+  }
+  .header_search{
+    width: 50rem/@base;
+    height: 60rem/@base;
+    background: url(../images/icon_search.png) no-repeat center center;
+    background-size:27rem/@base 28rem/@base;
+    position: absolute;
+    left:88rem/@base;
+    top:15rem/@base;
+  }
+
+}
+.sn_nav {
+  background-color: #fff;
+  li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-top: 20rem/@base;
+    margin-bottom: 20rem/@base;
+
+    img{
+      width: 80rem/@base;
+      height: 80rem/@base;
+      margin:0 auto;
+    }
+  }
+}
+.sn_footer{
+  position: fixed;
+  z-index: 999;
+}
+.sn_footer li{
+  width: 150rem/@base;
+  height: 100rem/@base;
+  float: left;
+  text-align: center;
+  img{
+    width: 50rem/@base;
+    height: 50rem/@base;
+    margin:0 auto;
+  }
+}
+.sn_banner{
+  position: relative;
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    width: auto;
+    position: absolute;
+    left:auto;
+    right: 20rem/@base;
+
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #fff;
+    width: 12rem/@base;
+    height: 12rem/@base;
+  }
+}
